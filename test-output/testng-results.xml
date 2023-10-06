@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[customer edited]]>
+    </line>
+    <line>
+      <![CDATA[customer created]]>
+    </line>
+    <line>
+      <![CDATA[customer created]]>
+    </line>
+    <line>
+      <![CDATA[customer created]]>
+    </line>
+    <line>
+      <![CDATA[customer created]]>
+    </line>
+    <line>
+      <![CDATA[customer created]]>
+    </line>
+    <line>
+      <![CDATA[customer modified]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-07-23T14:18:58 IST" name="Default suite" finished-at="2023-07-23T14:18:59 IST" duration-ms="416">
+    <groups>
+    </groups>
+    <test started-at="2023-07-23T14:18:58 IST" name="Default test" finished-at="2023-07-23T14:18:59 IST" duration-ms="416">
+      <class name="TestNGScripts.CreateCustomer">
+        <test-method signature="editCustomer()[pri:1, instance:TestNGScripts.CreateCustomer@62379589]" started-at="2023-07-23T14:18:58 IST" name="editCustomer" finished-at="2023-07-23T14:18:58 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[customer edited]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editCustomer -->
+        <test-method signature="createCustomer()[pri:2, instance:TestNGScripts.CreateCustomer@62379589]" started-at="2023-07-23T14:18:58 IST" name="createCustomer" finished-at="2023-07-23T14:18:59 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[customer created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method signature="createCustomer()[pri:2, instance:TestNGScripts.CreateCustomer@62379589]" started-at="2023-07-23T14:18:59 IST" name="createCustomer" finished-at="2023-07-23T14:18:59 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[customer created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method signature="createCustomer()[pri:2, instance:TestNGScripts.CreateCustomer@62379589]" started-at="2023-07-23T14:18:59 IST" name="createCustomer" finished-at="2023-07-23T14:18:59 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[customer created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method signature="createCustomer()[pri:2, instance:TestNGScripts.CreateCustomer@62379589]" started-at="2023-07-23T14:18:59 IST" name="createCustomer" finished-at="2023-07-23T14:18:59 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[customer created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method signature="createCustomer()[pri:2, instance:TestNGScripts.CreateCustomer@62379589]" started-at="2023-07-23T14:18:59 IST" name="createCustomer" finished-at="2023-07-23T14:18:59 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[customer created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method signature="modifyCustomer()[pri:3, instance:TestNGScripts.CreateCustomer@62379589]" started-at="2023-07-23T14:18:59 IST" name="modifyCustomer" finished-at="2023-07-23T14:18:59 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[customer modified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- modifyCustomer -->
+      </class> <!-- TestNGScripts.CreateCustomer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

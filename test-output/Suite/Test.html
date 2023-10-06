@@ -1,0 +1,560 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 13 14:33:35 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1425 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGScripts.Actress.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Actress</td>
+<td><div><pre>java.lang.AssertionError: null
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6444850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6444850'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestNGScripts.Actress@5c6648b0</td></tr>
+<tr>
+<td title='TestNGScripts.Actress.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Actress</td>
+<td><div><pre>java.lang.AssertionError: null
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace509891820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace509891820'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestNGScripts.Actress@5c6648b0</td></tr>
+<tr>
+<td title='TestNGScripts.Actress.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Actress</td>
+<td><div><pre>java.lang.AssertionError: null
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523457748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1523457748'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestNGScripts.Actress@5c6648b0</td></tr>
+<tr>
+<td title='TestNGScripts.Actress.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Actress</td>
+<td><div><pre>java.lang.AssertionError: null
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1716093734", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1716093734'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestNGScripts.Actress@5c6648b0</td></tr>
+<tr>
+<td title='TestNGScripts.Actress.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Actress</td>
+<td><div><pre>java.lang.AssertionError: null
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11939193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11939193'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at TestNGScripts.Actress.createCustomer(Actress.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestNGScripts.Actress@5c6648b0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGScripts.Qtalk.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Qtalk<br/>
+<a href="#Output-1926096844" onClick='toggleBox("Output-1926096844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926096844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926096844">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Qtalk@4c371370</td></tr>
+<tr>
+<td title='TestNGScripts.Qtalk.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Qtalk<br/>
+<a href="#Output-1607792885" onClick='toggleBox("Output-1607792885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1607792885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1607792885">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Qtalk@4c371370</td></tr>
+<tr>
+<td title='TestNGScripts.Qtalk.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Qtalk<br/>
+<a href="#Output-1316557528" onClick='toggleBox("Output-1316557528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1316557528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1316557528">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Qtalk@4c371370</td></tr>
+<tr>
+<td title='TestNGScripts.Cricketer.modifyCustomer()'><b>modifyCustomer</b><br>Test class: TestNGScripts.Cricketer<br/>
+<a href="#Output-769530879" onClick='toggleBox("Output-769530879", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-769530879" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-769530879">
+customer modified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Cricketer@459e9125</td></tr>
+<tr>
+<td title='TestNGScripts.Qtalk.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Qtalk<br/>
+<a href="#Output-1768792843" onClick='toggleBox("Output-1768792843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1768792843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1768792843">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Qtalk@4c371370</td></tr>
+<tr>
+<td title='TestNGScripts.CreateCustomer.modifyCustomer()'><b>modifyCustomer</b><br>Test class: TestNGScripts.CreateCustomer<br/>
+<a href="#Output-482052083" onClick='toggleBox("Output-482052083", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-482052083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-482052083">
+customer modified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.CreateCustomer@6f1de4c7</td></tr>
+<tr>
+<td title='TestNGScripts.Cricketer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Cricketer<br/>
+<a href="#Output-1234250905" onClick='toggleBox("Output-1234250905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1234250905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1234250905">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Cricketer@459e9125</td></tr>
+<tr>
+<td title='TestNGScripts.Qtalk.modifyCustomer()'><b>modifyCustomer</b><br>Test class: TestNGScripts.Qtalk<br/>
+<a href="#Output-1402433372" onClick='toggleBox("Output-1402433372", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1402433372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1402433372">
+customer modified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Qtalk@4c371370</td></tr>
+<tr>
+<td title='TestNGScripts.CreateCustomer.editCustomer()'><b>editCustomer</b><br>Test class: TestNGScripts.CreateCustomer<br/>
+<a href="#Output-1309238149" onClick='toggleBox("Output-1309238149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1309238149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1309238149">
+customer edited<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.CreateCustomer@6f1de4c7</td></tr>
+<tr>
+<td title='TestNGScripts.Qtalk.editCustomer()'><b>editCustomer</b><br>Test class: TestNGScripts.Qtalk<br/>
+<a href="#Output-1950701640" onClick='toggleBox("Output-1950701640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1950701640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1950701640">
+customer edited<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Qtalk@4c371370</td></tr>
+<tr>
+<td title='TestNGScripts.Cricketer.editCustomer()'><b>editCustomer</b><br>Test class: TestNGScripts.Cricketer<br/>
+<a href="#Output-460201727" onClick='toggleBox("Output-460201727", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-460201727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-460201727">
+customer edited<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Cricketer@459e9125</td></tr>
+<tr>
+<td title='TestNGScripts.CreateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.CreateCustomer<br/>
+<a href="#Output-170144208" onClick='toggleBox("Output-170144208", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-170144208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-170144208">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.CreateCustomer@6f1de4c7</td></tr>
+<tr>
+<td title='TestNGScripts.CreateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.CreateCustomer<br/>
+<a href="#Output-1687940142" onClick='toggleBox("Output-1687940142", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1687940142" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1687940142">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.CreateCustomer@6f1de4c7</td></tr>
+<tr>
+<td title='TestNGScripts.CreateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.CreateCustomer<br/>
+<a href="#Output-1765795529" onClick='toggleBox("Output-1765795529", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1765795529" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1765795529">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.CreateCustomer@6f1de4c7</td></tr>
+<tr>
+<td title='TestNGScripts.Cricketer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Cricketer<br/>
+<a href="#Output-16868310" onClick='toggleBox("Output-16868310", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16868310" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16868310">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Cricketer@459e9125</td></tr>
+<tr>
+<td title='TestNGScripts.Actress.modifyCustomer()'><b>modifyCustomer</b><br>Test class: TestNGScripts.Actress<br/>
+<a href="#Output-370370379" onClick='toggleBox("Output-370370379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-370370379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-370370379">
+customer modified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Actress@5c6648b0</td></tr>
+<tr>
+<td title='TestNGScripts.Qtalk.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Qtalk<br/>
+<a href="#Output-1728579441" onClick='toggleBox("Output-1728579441", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1728579441" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1728579441">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Qtalk@4c371370</td></tr>
+<tr>
+<td title='TestNGScripts.Cricketer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Cricketer<br/>
+<a href="#Output-1881901842" onClick='toggleBox("Output-1881901842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1881901842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1881901842">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Cricketer@459e9125</td></tr>
+<tr>
+<td title='TestNGScripts.Actress.editCustomer()'><b>editCustomer</b><br>Test class: TestNGScripts.Actress<br/>
+<a href="#Output-702846463" onClick='toggleBox("Output-702846463", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-702846463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-702846463">
+customer edited<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Actress@5c6648b0</td></tr>
+<tr>
+<td title='TestNGScripts.CreateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.CreateCustomer<br/>
+<a href="#Output-888473870" onClick='toggleBox("Output-888473870", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-888473870" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-888473870">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.CreateCustomer@6f1de4c7</td></tr>
+<tr>
+<td title='TestNGScripts.CreateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.CreateCustomer<br/>
+<a href="#Output-837108062" onClick='toggleBox("Output-837108062", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-837108062" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-837108062">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.CreateCustomer@6f1de4c7</td></tr>
+<tr>
+<td title='TestNGScripts.Cricketer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Cricketer<br/>
+<a href="#Output-812586739" onClick='toggleBox("Output-812586739", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-812586739" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-812586739">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Cricketer@459e9125</td></tr>
+<tr>
+<td title='TestNGScripts.Cricketer.createCustomer()'><b>createCustomer</b><br>Test class: TestNGScripts.Cricketer<br/>
+<a href="#Output-585324508" onClick='toggleBox("Output-585324508", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-585324508" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-585324508">
+customer created<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGScripts.Cricketer@459e9125</td></tr>
+</table><p>
+</body>
+</html>
